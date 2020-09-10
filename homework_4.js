@@ -34,15 +34,15 @@ const customers = [
         name: 'banana',
         count: 4,
 	}]},
-	{
-        name: 'Vlad',
+    {
+    name: 'Vlad',
     balance: 73,
     fruitsToBuy: [{
         name: 'orange',
         count: 2,
 	}]},
-	{
-        name: 'Senia',
+    {
+    name: 'Senia',
     balance: 84,
     fruitsToBuy: [{
         name: 'grapes',
@@ -64,10 +64,7 @@ const customers = [
  
 function buyFruits(customersArr) {
     // write code here
-	//console.log(Object.keys(customersArr).length)
-	//console.log(customersArr[0].fruitsToBuy[0].name)
     for (let i = 0; i < Object.keys(customersArr).length; i++) {
-		//console.log(customersArr[i])
 		const fru = String(customersArr[i].fruitsToBuy[0].name)
 		if (fruits.includes(fru)){
 			fruitsBought.push(fru)
@@ -93,7 +90,6 @@ function buyFruits(customersArr) {
 
  function getFruitsMap(fruitsArr) {
     // write code here
-	//console.log(fruitsArr)
 	let count = {}
 	for (let elem of fruitsArr) {
 		if (count[elem] === undefined) {
@@ -104,19 +100,7 @@ function buyFruits(customersArr) {
 	}
 	console.log(count)
 	return count;
-	//const fruCount = fruitsArr.reduce(function (FruMap, fra) {
-	//	if (fra[] in FruMap === false) {
-	//		FruMap[fra] = 0
-	//	}
-	//	
-	//	FruMap[fra] += 1
-	//	return FruMap
-	//	
-	//}, {});	
-	//console.log(FruMap)
- }
-
-//getFruitsMap(fruitsBought)
+ };
 
 // DONT'T EDIT FOLLOWING CODE
 buyFruits(customers);
